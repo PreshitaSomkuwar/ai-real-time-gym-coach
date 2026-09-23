@@ -3,8 +3,19 @@
 ========================================================= */
 
 .stApp {
-  background-color: #0A0D14;
-  color: #fff;
+    color: #fff;
+}
+
+.stApp > header {
+    background: transparent !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background: transparent !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
 }
 
 [data-testid="stSidebar"] {
@@ -178,4 +189,73 @@ div[role="menuitem"] {
   padding: 1.5rem 1rem !important;
   background-color: #181D2A !important;
   color: #fff;
+}
+/* =========================================================
+   DARK / BLACK BOX TEXT VISIBILITY
+   ========================================================= */
+
+[data-testid="stMetric"] {
+    color: white !important;
+}
+
+[data-testid="stMetric"] label {
+    color: white !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: white !important;
+}
+
+[data-testid="stMetricDelta"] {
+    color: white !important;
+}
+
+/* General text inside dark containers */
+div[style*="background"] p,
+div[style*="background"] h1,
+div[style*="background"] h2,
+div[style*="background"] h3,
+div[style*="background"] h4,
+div[style*="background"] h5,
+div[style*="background"] h6 {
+    color: white !important;
+}
+
+/* Streamlit info / success / warning boxes */
+[data-testid="stAlert"] p,
+[data-testid="stAlert"] div,
+[data-testid="stAlert"] span {
+    color: white !important;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] {
+    color: white !important;
+}
+
+/* Sidebar input boxes */
+section[data-testid="stSidebar"] input {
+    color: #222 !important;
+    background-color: white !important;
+}
+
+/* Exercise selectbox */
+section[data-testid="stSidebar"] [data-baseweb="select"] {
+    color: #222 !important;
+    background-color: white !important;
+}
+
+section[data-testid="stSidebar"] [data-baseweb="select"] * {
+    color: #222 !important;
+}
+
+/* Number input */
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] input {
+    color: #222 !important;
+    background-color: white !important;
+}
+
+/* Normal text */
+p {
+    color: white !important;
 }

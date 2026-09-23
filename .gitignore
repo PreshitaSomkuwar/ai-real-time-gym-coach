@@ -1,17 +1,51 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Virtual environment
+# Virtual environments
 venv/
-.env/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Streamlit secrets
+streamlit/secrets.toml
+.streamlit/secrets.toml
+
+# Database
+Main App/data.db
+
+# IDE / Editor
+.vscode/
+.idea/
+.spyderproject
+.spyproject
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Database
-Main App/data.db
-
 # Logs
 *.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing / cache
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/

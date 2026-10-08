@@ -11,6 +11,4 @@ sounddevice==0.5.5
 av==12.3.1
 aiortc==1.9.0
 pylibsrtp==0.8.0
-libportaudio2
-libasound2-dev
-opencv-contrib-python-headless==4.10.0.84
+
